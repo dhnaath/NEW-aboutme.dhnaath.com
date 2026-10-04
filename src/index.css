@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-calibri: 'Calibri', 'Carlito', 'Segoe UI', sans-serif;
+  --font-times: 'Times New Roman', Times, serif;
+}
+
+.mobile-scale-main {
+  zoom: 0.85;
+}
+@supports not (zoom: 0.85) {
+  .mobile-scale-main {
+    transform: scale(0.85);
+    transform-origin: top center;
+  }
+}
+
+@media (max-width: 767px) {
+  .mobile-scale-main {
+    zoom: 0.7905;
+  }
+}
+@supports not (zoom: 0.7905) {
+  @media (max-width: 767px) {
+    .mobile-scale-main {
+      transform: scale(0.7905);
+      transform-origin: top center;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .paper-scale-mobile {
+    zoom: 0.6375;
+  }
+}
+@supports not (zoom: 0.6375) {
+  @media (max-width: 767px) {
+    .paper-scale-mobile {
+      transform: scale(0.6375);
+      transform-origin: top center;
+    }
+  }
+}

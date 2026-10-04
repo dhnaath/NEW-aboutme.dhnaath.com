@@ -1,0 +1,6 @@
+{
+  "name": "Dhnaath Portfolio",
+  "description": "Dhnaath Portfolio - aboutme.dhnaath.com",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
